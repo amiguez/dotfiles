@@ -13,8 +13,8 @@ set hidden
 set confirm
 
 " Tabs
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
@@ -63,6 +63,10 @@ Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'
 " Navigate and manipulate files in a tree view.
 Plug 'scrooloose/nerdtree'
 
+" A Vim plugin which shows a git diff in the gutter (sign column) and
+" stages/undoes hunks.
+Plug 'airblade/vim-gitgutter'
+
  
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -104,12 +108,12 @@ call plug#end()
 " " Taglist Configuration
 " :map <F8> :TlistToggle<CR>
 " 
-" " NERDTree Configuration
-" :map <F9> :NERDTreeToggle<CR>
 " 
 " " JAVA
 " ":map <F9> :!ant jar -buildfile build.xml compile<CR>
 
+ " NERDTree Configuration
+:map <F9> :NERDTreeToggle<CR>
   
 " ############################################
 " ### START Markdown preview configuration ###
