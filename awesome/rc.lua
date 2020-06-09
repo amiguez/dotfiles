@@ -18,6 +18,9 @@ require("awful.hotkeys_popup.keys.vim")
 -- teardrop
 local teardrop = require('teardrop')
 
+-- pomodoro
+pomodoro = require("pomodoro")
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -208,7 +211,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "DEV", "WEB", "3", "MSC" }, s, awful.layout.layouts[1])
+    awful.tag({ "DEV", "WEB", "SEC", "MSC" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -244,6 +247,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
             mykeyboardlayout,
+            pomodoro,
             separator,
             mytextclock,
             s.mylayoutbox,
