@@ -1,0 +1,6 @@
+{
+  "codeLens.enable":true,
+  "coc.preferences.formatOnSaveFiletypes": ["scala"],
+  "metals.statusBarEnabled": true,
+  "metals.javaHome":"/usr/lib/jvm/java-8-openjdk-amd64"
+}
