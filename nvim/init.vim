@@ -286,3 +286,12 @@ nnoremap <silent> <space>tf :<C-u>CocCommand metals.revealInTreeView metalsBuild
 " ##############################
 "
 colorscheme palenight
+
+
+
+" ############################
+" ## NERDTREE Configuration ##
+" ############################
+"
+
+map <F7> :NERDTreeToggle<CR>
