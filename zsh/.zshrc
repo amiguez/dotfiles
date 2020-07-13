@@ -104,7 +104,7 @@ alias gcd="git checkout development"
 #
 
 # Instalation JAVA
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/bin
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 PATH=$PATH:$JAVA_HOME/bin
 
 PATH=$PATH:$HOME/METACO/SCALPBC/scalapbc-0.8.2/bin
@@ -143,14 +143,15 @@ source $HOME/METACO/soundbox/aliases
 source $HOME/sh_scripts/counters
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/abel/google-cloud-sdk/path.zsh.inc' ]; then . '/home/abel/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/abel/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/abel/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/abel/.sdkman"
-[[ -s "/home/abel/.sdkman/bin/sdkman-init.sh" ]] && source "/home/abel/.sdkman/bin/sdkman-init.sh"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
-[ -s "/home/abel/.web3j/source.sh" ] && source "/home/abel/.web3j/source.sh"
+[ -s "$HOME/.web3j/source.sh" ] && source "$HOME/.web3j/source.sh"
+source /usr/share/nvm/init-nvm.sh

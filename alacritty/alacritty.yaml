@@ -1,5 +1,4 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
-
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -92,5 +91,22 @@ window:
 # Font configuration (changes require restart)
 font:
   # Point size
-  size: 7.0
+  size: 6.0
+    # The normal (roman) font face to use.
+  normal:
+    family: Dejavu Sans Mono
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: DejaVu Sans Mono
+    # Style can be specified to pick a specific face.
+    style: Bold
+
+  # The italic font face
+  italic:
+    family: Droid Sans Mono Oblique
+    # Style can be specified to pick a specific face.
+    # style: Italic
 

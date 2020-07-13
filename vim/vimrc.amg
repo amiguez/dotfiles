@@ -79,6 +79,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'honza/vim-snippets'
 
 Plug 'sheerun/vim-polyglot'
+
+Plug 'junegunn/vim-emoji'
  
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -375,3 +377,11 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " ############################################
 " ### END Ultsinps configuration ###
 " ############################################
+"
+"
+"
+
+
+" Emoji configuration
+"
+set completefunc=emoji#complete

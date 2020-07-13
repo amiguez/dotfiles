@@ -16,6 +16,9 @@ set expandtab
 set autoindent
 set smartindent
 
+set undofile   " Maintain undo history between sessions
+set undodir=~/.config/nvim/undodir
+
 " Substitute word under cursor
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
@@ -47,6 +50,7 @@ Plug 'derekwyatt/vim-scala'
 
 " Git 
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 
 " Tree
@@ -56,6 +60,10 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 
 " Theme
 Plug 'drewtempelmeyer/palenight.vim'
+
+
+" Rust support
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
@@ -259,6 +267,7 @@ nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
 nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols
 nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <shift><shift>  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
 nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
@@ -286,8 +295,6 @@ nnoremap <silent> <space>tf :<C-u>CocCommand metals.revealInTreeView metalsBuild
 " ##############################
 "
 colorscheme palenight
-
-
 
 " ############################
 " ## NERDTREE Configuration ##
