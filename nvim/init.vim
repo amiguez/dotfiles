@@ -9,6 +9,10 @@
 " line number
 set number
 
+" search
+set ignorecase
+set smartcase
+
 " Tabs
 set tabstop=2
 set shiftwidth=2
