@@ -6,6 +6,9 @@
 "
 
 
+" no folding
+set nofoldenable
+
 " line number
 set number
 
