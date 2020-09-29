@@ -26,6 +26,8 @@ set smartindent
 set undofile   " Maintain undo history between sessions
 set undodir=~/.config/nvim/undodir
 
+set nofoldenable
+
 " Substitute word under cursor
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
