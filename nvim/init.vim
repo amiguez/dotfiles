@@ -76,6 +76,9 @@ Plug 'drewtempelmeyer/palenight.vim'
 " ELM programming language plugins
 Plug 'elmcast/elm-vim'
 
+" Julia support:
+Plug 'JuliaEditorSupport/julia-vim'
+
 call plug#end()
 
 " ############################################
