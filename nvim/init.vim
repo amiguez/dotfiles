@@ -32,7 +32,7 @@ set nofoldenable
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
 
-call plug#begin(stdpath('data') . '/plugged')
+call plug#begin()
 Plug 'junegunn/vim-easy-align'
 
 "vim-markdown
@@ -62,8 +62,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 
-" Tree
-Plug 'scrooloose/nerdtree'
+" NerdTree with git plugin
+Plug 'preservim/nerdtree'
 Plug 'xuyuanp/nerdtree-git-plugin'
 
 
@@ -72,7 +72,9 @@ Plug 'drewtempelmeyer/palenight.vim'
 
 
 " Rust support
-Plug 'rust-lang/rust.vim'
+""" Plug 'rust-lang/rust.vim'
+" ELM programming language plugins
+Plug 'elmcast/elm-vim'
 
 call plug#end()
 
