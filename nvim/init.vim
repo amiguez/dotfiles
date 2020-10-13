@@ -32,6 +32,10 @@ set nofoldenable
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
 
+" Clear search highlight with <CR>
+:nnoremap <silent><CR> :noh<CR><CR>
+
+
 call plug#begin()
 Plug 'junegunn/vim-easy-align'
 
