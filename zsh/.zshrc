@@ -104,54 +104,23 @@ alias gcd="git checkout development"
 #
 
 # Instalation JAVA
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-PATH=$PATH:$JAVA_HOME/bin
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+#PATH=$PATH:$JAVA_HOME/bin
 
-PATH=$PATH:$HOME/METACO/SCALPBC/scalapbc-0.8.2/bin
-
-# Truffle
-PATH=$PATH:$HOME/Apps/node_modules/truffle/build
 
 # Instalation SCALA
-export SCALA_HOME=/usr/local/java/jdk1.8.0_161
+#export SCALA_HOME=/usr/local/java/jdk1.8.0_161
 
 # Apps local
 PATH=$PATH:$HOME/Apps/bin
 
-# SILO specifics
-PATH=$PATH:$HOME/METACO/cli/dist
 
-## Set the max number of test suites in parallel, default it is the logic cpu's (4) in this 'beast'
-export SILO_TEST_MAX_PARALLELISM=2 
-export SBT_OPTS="-Xss2048K"
 
 export EDITOR=nvim
 alias open=xdg-open
 
 setopt nosharehistory
 
-alias gbDELALL='git branch | grep  -v -e " master" -e " development"  | xargs git branch -D'
-alias setScreens='xrandr --output eDP1 --auto --pos  0x350 --output HDMI1 --auto --pos 1920x0'
-
 alias vim=nvim
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-source $HOME/METACO/soundbox/aliases
 source $HOME/sh_scripts/counters
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/abel/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-
-[ -s "$HOME/.web3j/source.sh" ] && source "$HOME/.web3j/source.sh"
-source /usr/share/nvm/init-nvm.sh
