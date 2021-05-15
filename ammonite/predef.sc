@@ -1,6 +1,6 @@
 import $ivy.`org.typelevel::cats-core:2.1.1`, cats._, cats.implicits._
 import $ivy.`org.scalatest::scalatest:3.0.8`,org.scalatest._
-import $ivy.`org.scalacheck::scalacheck:1.14.0`
+import $ivy.`org.scalacheck::scalacheck:1.14.3`
 import $ivy.`io.monix::monix:3.1.0`
 import $ivy.`dev.zio::zio:1.0.0-RC18-2`
 import $ivy.`org.typelevel::cats-effect:2.1.2`
