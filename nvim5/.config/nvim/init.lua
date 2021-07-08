@@ -50,7 +50,7 @@ g["vim_markdown_conceal_code_blocks"] = 0
 --g["metals_server_version"] = "0.10.1+19-da13f348-SNAPSHOT"
 -- TODO I want to be able to do this so badly
 --g["metals_server_version"] = "latest.snapshot"
-g["metals_server_version"] = "0.10.2"
+g["metals_server_version"] = "0.10.4"
 
 ----------------------------------
 -- OPTIONS -----------------------
